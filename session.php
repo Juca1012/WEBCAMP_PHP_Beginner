@@ -4,7 +4,7 @@ ob_start();
 
 function h(string $s) : string 
 {
-    return
+    return htmlspecialchars($s, ENT_QUOTES);
 }
 
 $counter = $_SESSION['counter'] ?? 1;
